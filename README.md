@@ -2,7 +2,7 @@
 
 a deno magnet module
 
-## Useage
+## Usage
 
 ```typescript
 import { parse } from "https://deno.land/x/dt_magnet/mod.ts";
