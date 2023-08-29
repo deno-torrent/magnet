@@ -19,8 +19,8 @@ import { parse } from "https://deno.land/x/dt_magnet/mod.ts";
     //     241, 182, 124,  37,  80, 219,
     //     212,  41
     //   ],
-    //   params: Map(2) {
-    //     "HASH_STRING" => "P46HRED2ZTWSTHIFTMVPDNT4EVINXVBJ",
+    //   hashString: "P46HRED2ZTWSTHIFTMVPDNT4EVINXVBJ",
+    //   params: Map(1) {
     //     "dn" => "test"
     //   }
     // }
@@ -34,8 +34,8 @@ import { parse } from "https://deno.land/x/dt_magnet/mod.ts";
     //     241, 182, 124,  37,  80, 219,
     //     212,  41
     //   ],
-    //   params: Map(2) {
-    //     "HASH_STRING" => "7f3c78907acced299d059b2af1b67c2550dbd429",
+    //   hashString: "7f3c78907acced299d059b2af1b67c2550dbd429",
+    //   params: Map(1) {
     //     "dn" => "test"
     //   }
     // }

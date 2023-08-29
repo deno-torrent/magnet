@@ -62,8 +62,8 @@ Deno.test('test parse', () => {
   const hexResult = parse(hexMagnet)
 
   assertEquals(base32Result?.hash, hexResult?.hash)
-  assertEquals(base32Result?.args.get('HASH_STRING'), 'P46HRED2ZTWSTHIFTMVPDNT4EVINXVBJ')
-  assertEquals(hexResult?.args.get('HASH_STRING'), '7f3c78907acced299d059b2af1b67c2550dbd429')
-  assertEquals(base32Result?.args.get('dn'), 'test')
-  assertEquals(hexResult?.args.get('dn'), 'test')
+  assertEquals(base32Result?.hashString, 'P46HRED2ZTWSTHIFTMVPDNT4EVINXVBJ')
+  assertEquals(hexResult?.hashString, '7f3c78907acced299d059b2af1b67c2550dbd429')
+  assertEquals(base32Result?.params.get('dn'), 'test')
+  assertEquals(hexResult?.params.get('dn'), 'test')
 })
