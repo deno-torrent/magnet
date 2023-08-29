@@ -19,7 +19,7 @@ export function isValid(magnet: string) {
 export function parse(magnet: string):
   | {
       hash: Uint8Array
-      args: Map<string, string>
+      params: Map<string, string>
     }
   | undefined {
   if (magnet === null || magnet === undefined) {
@@ -61,8 +61,8 @@ export function parse(magnet: string):
  * @param nss Namespace Specific String
  */
 function parseNSS(nss: string) {
-  const map = parseNSSToMap(nss)
-  const hashString = map.get('HASH_STRING')
+  const params = parseNSSToMap(nss)
+  const hashString = params.get('HASH_STRING')
 
   if (!hashString) {
     return undefined
@@ -85,27 +85,27 @@ function parseNSS(nss: string) {
 
   return {
     hash,
-    args: map
+    params: params
   }
 }
 
 function parseNSSToMap(nss: string) {
-  const map = new Map<string, string>()
+  const params = new Map<string, string>()
   // abcdef1234567890&dn=example&tr=http%3A%2F%2Ftracker.example.com%2Fannounce
   const segments = nss.split('&')
 
   for (const [index, segment] of segments.entries()) {
     if (index === 0) {
-      map.set('HASH_STRING', segment)
+      params.set('HASH_STRING', segment)
     } else {
       const dict = segment.split('=')
       const key = dict[0]
       const value = dict[1]
-      map.set(key, value)
+      params.set(key, value)
     }
   }
 
-  return map
+  return params
 }
 
 /**
