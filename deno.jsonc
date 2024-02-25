@@ -1,9 +1,9 @@
 {
   "imports": {
-    "std/": "https://deno.land/std@0.200.0/"
+    "std/": "https://deno.land/std@0.217.0/"
   },
   "tasks": {
-    "test": "deno test -A --unstable"
+    "test": "deno test -A --unstable-net"
   },
   "test": {
     "include": [

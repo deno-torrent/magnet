@@ -1,5 +1,5 @@
 {
-  "version": "2",
+  "version": "3",
   "remote": {
     "https://deno.land/std@0.200.0/assert/_constants.ts": "8a9da298c26750b28b326b297316cdde860bc237533b07e1337c021379e6b2a9",
     "https://deno.land/std@0.200.0/assert/_diff.ts": "1a3c044aedf77647d6cac86b798c6417603361b66b54c53331b312caeb447aea",
@@ -10,6 +10,16 @@
     "https://deno.land/std@0.200.0/encoding/base32.ts": "c329447451560ec692b9eb4d1badb6437f1d419ddbb21c1f994b0fe0b6b66cc8",
     "https://deno.land/std@0.200.0/encoding/base64.ts": "144ae6234c1fbe5b68666c711dc15b1e9ee2aef6d42b3b4345bf9a6c91d70d0d",
     "https://deno.land/std@0.200.0/encoding/hex.ts": "b4b1a7cb678745b0bf181ed8cf2498c7be00d121a7de244b752fbf9c7d9c48cd",
-    "https://deno.land/std@0.200.0/fmt/colors.ts": "a7eecffdf3d1d54db890723b303847b6e0a1ab4b528ba6958b8f2e754cf1b3bc"
+    "https://deno.land/std@0.200.0/fmt/colors.ts": "a7eecffdf3d1d54db890723b303847b6e0a1ab4b528ba6958b8f2e754cf1b3bc",
+    "https://deno.land/std@0.217.0/assert/_constants.ts": "a271e8ef5a573f1df8e822a6eb9d09df064ad66a4390f21b3e31f820a38e0975",
+    "https://deno.land/std@0.217.0/assert/_diff.ts": "dcc63d94ca289aec80644030cf88ccbf7acaa6fbd7b0f22add93616b36593840",
+    "https://deno.land/std@0.217.0/assert/_format.ts": "0ba808961bf678437fb486b56405b6fefad2cf87b5809667c781ddee8c32aff4",
+    "https://deno.land/std@0.217.0/assert/assert_equals.ts": "4497c56fe7d2993b0d447926702802fc0becb44e319079e8eca39b482ee01b4e",
+    "https://deno.land/std@0.217.0/assert/assertion_error.ts": "9f689a101ee586c4ce92f52fa7ddd362e86434ffdf1f848e45987dc7689976b8",
+    "https://deno.land/std@0.217.0/assert/equal.ts": "fae5e8a52a11d3ac694bbe1a53e13a7969e3f60791262312e91a3e741ae519e2",
+    "https://deno.land/std@0.217.0/encoding/_util.ts": "beacef316c1255da9bc8e95afb1fa56ed69baef919c88dc06ae6cb7a6103d376",
+    "https://deno.land/std@0.217.0/encoding/base32.ts": "4b0a9697c9e4b76ecbc58c2e0b7af5ec97d582097b28827fe21330960a49b18f",
+    "https://deno.land/std@0.217.0/encoding/hex.ts": "4d47d3b25103cf81a2ed38f54b394d39a77b63338e1eaa04b70c614cb45ec2e6",
+    "https://deno.land/std@0.217.0/fmt/colors.ts": "d239d84620b921ea520125d778947881f62c50e78deef2657073840b8af9559a"
   }
 }

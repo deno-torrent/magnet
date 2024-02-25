@@ -1,11 +1,10 @@
-import { decode as base32Decode } from 'std/encoding/base32.ts'
-import { decode as hexDecode } from 'std/encoding/hex.ts'
+import { decodeBase32 } from 'std/encoding/base32.ts'
+import { decodeHex } from 'std/encoding/hex.ts'
 
 const PREFIX = 'magnet:?xt=urn:'
 const PREFIX_BITTORRENT_INFO_HASH = `${PREFIX}btih:`
 const PREFIX_SHA1 = `${PREFIX}sha1:`
 const PREFIX_LSIT = [PREFIX_BITTORRENT_INFO_HASH, PREFIX_SHA1]
-const textEncoder = new TextEncoder()
 
 // check is valid magnet for bittorent
 export function isValid(magnet: string) {
@@ -72,11 +71,11 @@ function parseNSS(nss: string) {
 
   // if is hex sha1
   if (isSha1Hex(hashString)) {
-    hash = hexDecode(textEncoder.encode(hashString))
+    hash = decodeHex(hashString)
   }
   // if is base32 sha1
   else if (isSha1Base32(hashString)) {
-    hash = base32Decode(hashString)
+    hash = decodeBase32(hashString)
   }
 
   if (!hash) {
