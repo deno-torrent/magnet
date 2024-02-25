@@ -1,0 +1,9 @@
+# Deno 缓存目录 / Deno cache directory
+.deno/
+
+# 覆盖率报告 / Coverage reports
+coverage/
+
+# 操作系统文件 / OS-specific files
+.DS_Store
+Thumbs.db
